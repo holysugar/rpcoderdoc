@@ -88,8 +88,9 @@ module Rpcoderdoc
   end
 
   class TextilePresenter
-    def initialize(commandlist)
+    def initialize(commandlist, page_prefix = "")
       @commandlist = commandlist
+      @page_prefix = page_prefix
     end
 
     def print(io = $stdout)
@@ -112,7 +113,11 @@ module Rpcoderdoc
     end
 
     def textile(name, object)
-      strings_as_table([name, object.path, object.method, object.description])
+      strings_as_table([link(name), object.path, object.method, object.description])
+    end
+
+    def link(name)
+      "[[#{@page_prefix}#{name}|#{name}]]"
     end
   end
 

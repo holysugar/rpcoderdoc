@@ -4,9 +4,10 @@ require 'rpcoderdoc'
 
 
 def main
-  script = File.read(ARGV[0])
+  script = File.read(ARGV[0]) # FIXME if no arguments
+  page_prefix = ARGV[1] || ""
   commandset = Rpcoderdoc.eval(script)
-  Rpcoderdoc::TextilePresenter.new(commandset).print($stdout)
+  Rpcoderdoc::TextilePresenter.new(commandset, page_prefix).print($stdout)
 end
 
 main
