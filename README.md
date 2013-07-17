@@ -1,6 +1,6 @@
 # Rpcoderdoc
 
-TODO: Write a gem description
+Generate contract.rb to other document style
 
 ## Installation
 
@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-    $ bundle
+    $ bundle --binstubs
 
 Or install it yourself as:
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+bin/rpcoderdoc some/path/to/contract.rb > rpcoder.textile
+```
+
+## Todo
+
+markdown?
 
 ## Contributing
 

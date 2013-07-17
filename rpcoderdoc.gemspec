@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rpcoderdoc::VERSION
   spec.authors       = ["holysugar"]
   spec.email         = ["holysugar@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{RPCoder document generator (without rpcoder)}
+  spec.summary       = %q{RPCoder document generator (without rpcoder)}
   spec.homepage      = ""
   spec.license       = "MIT"
 
